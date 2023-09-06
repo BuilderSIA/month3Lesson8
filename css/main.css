@@ -1,3 +1,191 @@
+a {
+  text-decoration: none;
+}
 
+.header {
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+.header .header__nav {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+}
+.header .header__nav .header__nav-menu {
+  width: 3%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 100%;
+}
+.header .header__nav .header__nav-list {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.header .header__nav .header__nav-social {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__nav .header__nav-social .tel {
+  width: 60%;
+  height: 100%;
+}
+.header .header__nav .header__nav-social .tel .callTo #call {
+  display: none;
+}
+.header .header__nav .header__nav-social .tel .callTo .number {
+  font-size: xx-large;
+  color: #D8160C;
+  margin: 30px 0 0 0;
+}
+.header .header__nav .header__nav-social .tel .location {
+  width: 100%;
+  height: 40%;
+}
+.header .header__nav .header__nav-social .tel .location a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header .header__nav .header__nav-social .social {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__nav .header__nav-social .social .social-logo {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__nav .header__nav-social .social .social-logo a img {
+  width: 90%;
+  height: 90%;
+}
+.header .header__hero {
+  width: 100%;
+  height: 85%;
+  background: url(/images/IMG_6801\ [problembo-PhotoRoom\ 1.png) 650px 0px no-repeat, url(/images/3d-rendering-business-meeting-and-working-room-on-office-building\ 1.png) no-repeat, rgba(255, 255, 255, 0.9) no-repeat;
+  background-blend-mode: normal, color-burn;
+  background-size: contain;
+}
+.header .header__hero .header__hero-top .topText {
+  width: 75%;
+  height: 20%;
+  margin: 50px 0 0 30px;
+  font-size: 300%;
+}
+.header .header__hero .header__hero-top .discussBtn {
+  width: 30%;
+  padding: 1%;
+  margin: 15px 0 0 30px;
+  border: 1px solid #D8160C;
+  background: #D8160C;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.header .header__hero .header__hero-top .discussBtn a {
+  color: #FFF;
+  font-weight: 500px;
+}
+.header .header__hero .header__hero-bottom {
+  width: 75%;
+  height: 25%;
+  display: flex;
+  margin: 265px 0 0 30px;
+  gap: 65px;
+}
+.header .header__hero .header__hero-bottom .lawyer {
+  font-size: xx-small;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .header .header__nav .header__nav-list {
+    display: none;
+  }
+  .header .header__nav .header__nav-social {
+    width: 100%;
+  }
+  .header .header__nav .header__nav-social .callTo {
+    width: 90%;
+  }
+  .header .header__nav .header__nav-social .callTo .tel {
+    width: 100%;
+  }
+  .header .header__nav .header__nav-social .social {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    width: 100%;
+  }
+  .header .header__nav .header__nav-menu {
+    display: none;
+  }
+  .header .header__nav .header__nav-logo img {
+    width: 100px;
+  }
+  .header .header__nav .header__nav-social {
+    margin-left: 20px;
+  }
+  .header .header__nav .header__nav-social .tel .callTo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+  .header .header__nav .header__nav-social .tel .callTo #call {
+    display: block;
+    color: #D8160C;
+  }
+  .header .header__nav .header__nav-social .tel .callTo .number {
+    width: 100%;
+    font-size: large;
+  }
+  .header .header__nav .header__nav-social .tel .callTo .location {
+    margin: 0;
+  }
+  .header .header__nav .header__nav-social .social {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    width: 100%;
+  }
+  .header .header__nav-logo img {
+    width: 80px;
+  }
+  .header .header__nav-social {
+    width: 100%;
+  }
+  .header .header__nav-social .tel {
+    width: 200px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
